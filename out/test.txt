@@ -1,0 +1,10 @@
+else if (((n = fechados.get(child.layout)) != null) && (n.getG() + n.getH() > child.getG() + child.getH())) 
+                {
+                    abertos.add(child);
+                    fechados.replace(child.layout, child);
+                }  
+
+                   x.g = child.getG();
+                        x.heuristic = child.getH();
+                        x.father = child.father;
+                        abertos.add(x)
